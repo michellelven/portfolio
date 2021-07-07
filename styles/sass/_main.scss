@@ -30,3 +30,58 @@
         line-height: 1.5rem;
     }
 }
+
+// Skills Section Styles
+
+.skillsSection {
+    background-color: black;
+    h3 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        text-align: center;
+        border-bottom: 4px solid $primary;
+        padding-top: 4rem;
+    }
+}
+
+.moveH3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillsSection ul {
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 4rem;
+    border: 6px solid white;
+    border-radius: 20px;
+    margin: 0 6rem;
+}
+
+.eachSkill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eachSkill i {
+    color: $primary;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    &:hover {
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.eachSkill p {
+    color: white;
+    text-align: center;
+}
