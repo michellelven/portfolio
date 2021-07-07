@@ -1,0 +1,70 @@
+header {
+    background-image: url(../assets/hexagonal-pattern.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.headerContainer {
+    height: 100%;
+    width: 100%;
+    &::before {
+        content: "";
+        background-image: linear-gradient(to bottom right, #591CFF, violet, $primary);
+        opacity: 0.75;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+// background-image: linear-gradient(to bottom right, #591CFF, #CD1CFF, #ff1b96)
+
+.headerContainer nav {
+    padding: 2rem 0;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.headerContainer li {
+    text-transform: uppercase;
+    z-index: 10;
+    margin: 0 1.25rem;
+    a {
+        color: black;
+        font-weight: bold;
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem;
+        &:hover,
+        &:focus {
+            border-bottom: 4px solid $primary;
+        }
+    }
+}
+
+.headers {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: $header-font;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    z-index: 10;
+}
+

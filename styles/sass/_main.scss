@@ -1,0 +1,32 @@
+// About Me Section Styles
+
+.aboutMeSection {
+    background-color: black;
+}
+
+.aboutMeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.myImage img {
+    box-shadow: -0.75rem 0.75rem 0.05rem $primary;
+}
+
+.myStory {
+    color: white;
+    text-align: center;
+    padding: 0 4rem;
+    h3 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        display: inline-block;
+        border-bottom: 4px solid $primary;
+    }
+    p {
+        padding-top: 2rem;
+        line-height: 1.5rem;
+    }
+}
