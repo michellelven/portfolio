@@ -113,12 +113,28 @@
         <section id="projects">
 
         </section>
-        <section id="contact">
-
+        <section id="contact" class="contactSection">
+            <div class="wrapper contactGrid">
+                <div class="contactInfo">
+                    <h3>Contact</h3>
+                    <p>I gave you the chance of aiding me willingly, but you have elected the way of pain! Put Witchking halfling. Oliphaunt nose titles EIf-witch quickened? Sméagol does pity One Ring signature escaped farriers solid. </p>
+                </div>
+                <div class="formContainer">
+                    <form action="submit" method="POST" name="contactForm" class="formGrid">
+                        <label for="userName" class="sr-only">Enter your name.</label>
+                        <input type="text" id="userName" name="" placeholder="name" required="">
+                        <label for="userEmail" class="sr-only">Enter your email.</label>
+                        <input type="email" id="useEmail" placeholder="email" required="">
+                        <label for="userMessage" class="sr-only">Write your message here.</label>
+                        <textarea name="userMessage" id="userMessage" cols="30" rows="8" required=""></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-
+        <p>{/* Made with a whole lot of love and a little bit of "Sass" */}</p>
     </footer>    
 </body>
 </html>

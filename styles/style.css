@@ -249,7 +249,9 @@ h3,
 nav,
 ul,
 li,
-p {
+p,
+form,
+button {
   margin: 0;
   padding: 0;
 }
@@ -380,6 +382,7 @@ h2 {
   padding: 0 4rem;
 }
 .myStory h3 {
+  font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   display: inline-block;
@@ -394,6 +397,7 @@ h2 {
   background-color: black;
 }
 .skillsSection h3 {
+  font-family: "Exo 2", sans-serif;
   color: white;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -413,6 +417,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 4rem;
 }
 
 .skillsSection ul {
@@ -441,6 +446,10 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
 }
+.eachSkill p {
+  color: white;
+  text-align: center;
+}
 
 .eachSkill i {
   color: #ff1b96;
@@ -452,7 +461,167 @@ h2 {
   cursor: pointer;
 }
 
-.eachSkill p {
+.contactSection {
+  background-color: black;
+}
+
+.contactGrid {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+}
+.contactGrid h3 {
+  font-family: "Exo 2", sans-serif;
   color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 4px solid #ff1b96;
+}
+
+.contactGrid p {
+  color: white;
+  padding-top: 2rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+}
+
+.formContainer {
+  border: 4px solid #ff1b96;
+  border-radius: 30px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem;
+}
+.formGrid input,
+.formGrid textarea {
+  background-color: black;
+  outline: none;
+}
+
+.formGrid textarea {
+  resize: none;
+}
+
+.formGrid input[type=text],
+.formGrid input[type=email],
+.formGrid textarea {
+  border: 4px solid white;
+  border-radius: 30px;
+  color: white;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+}
+.formGrid input[type=text]::-webkit-input-placeholder, .formGrid input[type=email]::-webkit-input-placeholder, .formGrid textarea::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.formGrid input[type=text]::-moz-placeholder, .formGrid input[type=email]::-moz-placeholder, .formGrid textarea::-moz-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.formGrid input[type=text]:-ms-input-placeholder, .formGrid input[type=email]:-ms-input-placeholder, .formGrid textarea:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.formGrid input[type=text]::-ms-input-placeholder, .formGrid input[type=email]::-ms-input-placeholder, .formGrid textarea::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.formGrid input[type=text]::placeholder,
+.formGrid input[type=email]::placeholder,
+.formGrid textarea::placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+.formGrid input[type=text]:focus, .formGrid input[type=text]:hover,
+.formGrid input[type=email]:focus,
+.formGrid input[type=email]:hover,
+.formGrid textarea:focus,
+.formGrid textarea:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #ff1b96;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.formGrid input[type=text]:focus::-webkit-input-placeholder, .formGrid input[type=text]:hover::-webkit-input-placeholder, .formGrid input[type=email]:focus::-webkit-input-placeholder, .formGrid input[type=email]:hover::-webkit-input-placeholder, .formGrid textarea:focus::-webkit-input-placeholder, .formGrid textarea:hover::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.formGrid input[type=text]:focus::-moz-placeholder, .formGrid input[type=text]:hover::-moz-placeholder, .formGrid input[type=email]:focus::-moz-placeholder, .formGrid input[type=email]:hover::-moz-placeholder, .formGrid textarea:focus::-moz-placeholder, .formGrid textarea:hover::-moz-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.formGrid input[type=text]:focus:-ms-input-placeholder, .formGrid input[type=text]:hover:-ms-input-placeholder, .formGrid input[type=email]:focus:-ms-input-placeholder, .formGrid input[type=email]:hover:-ms-input-placeholder, .formGrid textarea:focus:-ms-input-placeholder, .formGrid textarea:hover:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.formGrid input[type=text]:focus::-ms-input-placeholder, .formGrid input[type=text]:hover::-ms-input-placeholder, .formGrid input[type=email]:focus::-ms-input-placeholder, .formGrid input[type=email]:hover::-ms-input-placeholder, .formGrid textarea:focus::-ms-input-placeholder, .formGrid textarea:hover::-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.formGrid input[type=text]:focus::placeholder, .formGrid input[type=text]:hover::placeholder,
+.formGrid input[type=email]:focus::placeholder,
+.formGrid input[type=email]:hover::placeholder,
+.formGrid textarea:focus::placeholder,
+.formGrid textarea:hover::placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+.formGrid button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  width: 140px;
+  margin: 0 auto;
+  border: 4px solid white;
+  border-radius: 30px;
+}
+.formGrid button:hover, .formGrid button:focus {
+  border: 4px solid #ff1b96;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #ff1b96;
+}
+footer p {
+  padding: 0.5rem 0;
   text-align: center;
 }
