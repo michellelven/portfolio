@@ -99,6 +99,13 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     column-gap: 2rem;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
     h3 {
         font-family: $header-font;
         color: white;
@@ -107,20 +114,39 @@
         text-align: center;
         border-bottom: 4px solid $primary;
     }
+    p {
+        color: white;
+        padding-top: 2rem;
+        line-height: 1.5rem;
+        text-align: center;       
+    }
 }
 
-.contactGrid p {
+.contactInfo .email {
     color: white;
-    padding-top: 2rem;
-    line-height: 1.5rem;
-    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    &:hover,
+    &:focus {
+        border-bottom: 4px solid $primary;
+    }
 }
 
-.contactInfo {
+.contactInfo ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 2rem;
+    padding-top: 2rem;
+}
+
+.contactInfo li {
+    padding: 0 1rem;
+    a {
+        color: $primary;
+        font-size: 2rem;
+        &:hover,
+        &:focus {
+            color: white;
+        }
+    }
 }
 
 .formContainer {
