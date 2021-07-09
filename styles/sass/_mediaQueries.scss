@@ -1,0 +1,203 @@
+@media (max-width: 940px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .aboutMeContainer {
+        flex-direction: column;
+    }
+
+    .myImage {
+        width: 300px;
+    }
+
+    .myStory h3 {
+        padding-top: 2rem;
+    }
+
+    .skillsSection ul {
+        padding: 2rem 0;
+    }
+
+    .skillsGrid {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 2rem;
+        row-gap: 3rem;
+    }
+
+    .flexProjects ul .project3,
+    .flexProjects ul .project1 {
+        flex-direction: column;
+    }
+
+    .flexProjects ul .project4,
+    .flexProjects ul .project2 {
+        flex-direction: column-reverse;
+    }
+
+    .flexProjects .projectPhoto {
+        width: 450px;
+        padding: 2rem 0;
+    }
+
+    .projectInfo {
+        margin-bottom: 2rem;
+        p {
+            line-height: 1.25rem;
+        } 
+    }
+
+    .contactGrid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        padding-top: 0;
+    }
+
+    .formContainer {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .navMenu .ulBurger{
+        display: none;
+    }
+
+    .navMenu .hamburger {
+        display: initial;
+        &:focus {
+            color: white;
+        }   
+    }
+
+    .navMenu .ulBurger.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 4rem;
+    }
+
+    .headerContainer li {
+        margin: 0 0 0.25rem 0;
+        a {
+            font-size: 1rem;
+            letter-spacing: 0rem;
+        }
+    }
+
+    .headers {
+        height: 40vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+
+    .myStory {
+        padding: 0 1rem;
+    }
+
+    .flexSkills {
+        padding-bottom: 0;
+    }
+
+    .skillsGrid {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem;
+        row-gap: 2rem;
+        li {
+            padding: 0 0.5rem;
+        }
+    }
+
+    .eachSkill i {
+        font-size: 3rem;
+    }
+
+    .eachSkill p {
+        font-size: 0.9rem;
+    }
+
+    .flexProjects ul {
+        padding-bottom: 0;
+    }
+
+    .flexProjects ul li {
+        padding: 2rem 0;
+    }
+
+    .flexProjects .projectPhoto {
+        width: 280px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutMeContainer {
+        padding: 2rem 0;
+    }
+
+    .myImage {
+        width: 250px;
+        img {
+            box-shadow: none;
+        }
+    }
+
+    .myStory p {
+        line-height: 1.25rem;
+    }
+
+    .contactInfo {
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    h2 span {
+        display: block;
+    }
+
+    .projectInfo h4 {
+        font-size: 1rem;
+    }
+
+    .projectLinks {
+        display: flex;
+        flex-direction: column;
+        a {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+    }
+
+    .flexProjects .projectPhoto {
+        width: 260px;
+    }
+
+    .contactInfo .email {
+        font-size: 1rem;
+    }
+
+    .contactInfo p {
+        line-height: 1.25rem;
+    }
+
+    .formContainer {
+        border: none;
+        border-radius: none;
+    }
+
+    .formGrid {
+        margin: 0.5rem;
+    }
+}

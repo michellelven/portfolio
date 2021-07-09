@@ -251,6 +251,7 @@ h4,
 nav,
 ul,
 li,
+a,
 p,
 form,
 button {
@@ -313,6 +314,20 @@ header {
           justify-content: flex-end;
 }
 
+.navMenu {
+  position: relative;
+}
+
+.navMenu .hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+}
+.navMenu .hamburger:visited, .navMenu .hamburger:link {
+  color: black;
+}
+
 .headerContainer li {
   text-transform: uppercase;
   z-index: 10;
@@ -329,7 +344,7 @@ header {
 }
 
 .headers {
-  height: 60vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,6 +549,7 @@ h2 {
 .projectInfo p {
   padding: 1rem 0 2rem 0;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 .projectInfo h4,
@@ -561,7 +577,7 @@ h2 {
 .contactGrid {
   padding: 4rem 0;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 2fr;
   -webkit-column-gap: 2rem;
      -moz-column-gap: 2rem;
           column-gap: 2rem;
@@ -650,6 +666,7 @@ h2 {
   color: white;
   padding: 0.5rem 2rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 .formGrid input[type=text]::-webkit-input-placeholder, .formGrid input[type=email]::-webkit-input-placeholder, .formGrid textarea::-webkit-input-placeholder {
   color: white;
@@ -743,4 +760,227 @@ footer {
 footer p {
   padding: 0.5rem 0;
   text-align: center;
+}
+
+@media (max-width: 940px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .aboutMeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .myImage {
+    width: 300px;
+  }
+
+  .myStory h3 {
+    padding-top: 2rem;
+  }
+
+  .skillsSection ul {
+    padding: 2rem 0;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 2rem;
+    row-gap: 3rem;
+  }
+
+  .flexProjects ul .project3,
+.flexProjects ul .project1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .flexProjects ul .project4,
+.flexProjects ul .project2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .flexProjects .projectPhoto {
+    width: 450px;
+    padding: 2rem 0;
+  }
+
+  .projectInfo {
+    margin-bottom: 2rem;
+  }
+  .projectInfo p {
+    line-height: 1.25rem;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    padding-top: 0;
+  }
+
+  .formContainer {
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 680px) {
+  .navMenu .ulBurger {
+    display: none;
+  }
+
+  .navMenu .hamburger {
+    display: initial;
+  }
+  .navMenu .hamburger:focus {
+    color: white;
+  }
+
+  .navMenu .ulBurger.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    left: 4rem;
+  }
+
+  .headerContainer li {
+    margin: 0 0 0.25rem 0;
+  }
+  .headerContainer li a {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+  }
+
+  .headers {
+    height: 40vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+
+  .myStory {
+    padding: 0 1rem;
+  }
+
+  .flexSkills {
+    padding-bottom: 0;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 1rem;
+    row-gap: 2rem;
+  }
+  .skillsGrid li {
+    padding: 0 0.5rem;
+  }
+
+  .eachSkill i {
+    font-size: 3rem;
+  }
+
+  .eachSkill p {
+    font-size: 0.9rem;
+  }
+
+  .flexProjects ul {
+    padding-bottom: 0;
+  }
+
+  .flexProjects ul li {
+    padding: 2rem 0;
+  }
+
+  .flexProjects .projectPhoto {
+    width: 280px;
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .aboutMeContainer {
+    padding: 2rem 0;
+  }
+
+  .myImage {
+    width: 250px;
+  }
+  .myImage img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .myStory p {
+    line-height: 1.25rem;
+  }
+
+  .contactInfo {
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 450px) {
+  h2 span {
+    display: block;
+  }
+
+  .projectInfo h4 {
+    font-size: 1rem;
+  }
+
+  .projectLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectLinks a {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .flexProjects .projectPhoto {
+    width: 260px;
+  }
+
+  .contactInfo .email {
+    font-size: 1rem;
+  }
+
+  .contactInfo p {
+    line-height: 1.25rem;
+  }
+
+  .formContainer {
+    border: none;
+    border-radius: none;
+  }
+
+  .formGrid {
+    margin: 0.5rem;
+  }
 }

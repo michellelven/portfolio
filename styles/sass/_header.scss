@@ -29,6 +29,21 @@ header {
     }
 }
 
+.navMenu {
+    position: relative;
+}
+
+.navMenu .hamburger{
+    display: none;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    &:visited,
+    &:link {
+        color:black;
+    }
+}
+
 .headerContainer li {
     text-transform: uppercase;
     z-index: 10;
@@ -46,7 +61,7 @@ header {
 }
 
 .headers {
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

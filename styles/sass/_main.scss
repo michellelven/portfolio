@@ -141,6 +141,7 @@
     p {
         padding: 1rem 0 2rem 0;
         text-align: center;
+        line-height: 1.5rem;
     }
 }
 
@@ -174,7 +175,7 @@
 .contactGrid {
     padding: 4rem 0;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
 }
 
@@ -255,6 +256,7 @@
         color: white;
         padding: 0.5rem 2rem;
         margin-bottom: 1rem;
+        width: 100%;
         &::placeholder {
             color: white;
             opacity: 1;

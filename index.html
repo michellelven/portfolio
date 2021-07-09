@@ -16,8 +16,9 @@
     <header>
         <div class="headerContainer">
             <div class="wrapper">
-                <nav>
-                    <ul>
+                <nav class="navMenu">
+                    <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
+                    <ul class="ulBurger">
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
@@ -26,7 +27,7 @@
                 </nav>
                 <div class="headers">
                     <h1>Michelle Chiasson</h1>
-                    <h2>// Front-End Web Developer //</h2>
+                    <h2>// Front-End<span></span> Web Developer //</h2>
                 </div>
             </div>
         </div>
@@ -39,7 +40,7 @@
                 </div>
                 <div class="myStory">
                     <h3>My Story</h3>
-                    <p>She-Elf cloaked riven herald. Unfair probably girl tongues Pippin's ropes expert swarming. Shines Southrons captive exists razors succeed able-bodied undimmed kingdoms bay? 300 shore cloaks unleashed permitted Mereth ensnare. Elderly chap. Big grey beard, pointy hat. Henceforth achieving Éomer skinned seven sustained marshland hearth wine. Without poisoning gonna bids marry perhaps Minas Tirith thatched legends 10000 been. Oakenshield's pines skin-changer 60 fume? Didn't strange hell halflings Balrog hairy into stay abyss 3434.</p>
+                    <p>Hi, I'm Michelle! My journey has taken me from dental hygiene to web development and I have developed a passion for building accessible and responsive applications. I have unearthed my creative side and I'm thrilled to be part of an industry where I can also put my problem-solving and communication skills to good use. I'm currently looking to be part of a collaborative team where I can further develop my skills, so please have a look at some of my projects and feel free to reach out if you'd like to get to know me better.</p>
                 </div>
             </div>
         </section>
@@ -114,7 +115,7 @@
             <div class="wrapper flexProjects">
                 <h3>My Projects</h3>
                 <ul>
-                    <li>
+                    <li class="project4">
                         <div class="projectPhoto">
                             <img src="./assets/what-do-you-no-photo.png" alt="A image of my responsive React game project displayed on a laptop screen.">
                         </div>
@@ -127,7 +128,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="project3">
                         <div class="projectInfo">
                             <h4>The Movie Tracker 🎬</h4>
                             <p>A responsive React app that allows users to create a list of movies to watch by searching for movie titles using the TMDB API. The movie poster, title, and description are mounted to the page and the movie title is saved to Firebase.</p>
@@ -140,7 +141,7 @@
                             <img src="./assets/movie-tracker-photo.png" alt="A image of my responsive, movie-themed React project displayed on multiple device screens.">
                         </div>
                     </li>
-                    <li>
+                    <li class="project2">
                         <div class="projectPhoto">
                             <img src="./assets/word-a-day-photo.png" alt="A image of my responsive, Word-A-Day JavaScript project displayed on multiple device screens.">
                         </div>
@@ -153,7 +154,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="project1">
                         <div class="projectInfo">
                             <h4>Boat Ride Adventures</h4>
                             <p>Multi-page PSD conversion made using a client brief and design files. Responsive across all devices.</p>
@@ -203,7 +204,7 @@
                         <label for="userEmail" class="sr-only">Enter your email.</label>
                         <input type="email" id="useEmail" placeholder="EMAIL" required="">
                         <label for="userMessage" class="sr-only">Write your message here.</label>
-                        <textarea name="userMessage" id="userMessage" cols="30" rows="8" required=""></textarea>
+                        <textarea name="userMessage" id="userMessage" rows="8" required=""></textarea>
                         <button type="submit">SEND</button>
                     </form>
                 </div>
@@ -212,6 +213,7 @@
     </main>
     <footer>
         <p>{/* Made with a whole lot of love 🖤 and a little bit of "Sass" */}</p>
-    </footer>    
+    </footer> 
+    <script src="./scripts.js"></script>    
 </body>
 </html>
