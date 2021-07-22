@@ -2,3 +2,32 @@ $header-font: 'Exo 2', sans-serif;
 $body-font: 'Roboto', sans-serif;
 
 $primary: #ff1b96;
+$secondary: #9561fd;
+
+@mixin h3 {
+    font-family: $header-font;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border-bottom: 4px solid $primary;
+    position: relative;
+}
+
+@mixin h-after {
+    content: " ";
+    position: absolute;
+    background: $secondary;
+    display: block;
+    width: 80%;
+    left: 10%;
+    height: 4px;
+    bottom: -9px;
+}
+
+@mixin h4 {
+    border-bottom: 4px solid $primary;
+    font-size: 1.25rem;
+    font-family: $header-font;
+    color: white;
+    position: relative;
+}

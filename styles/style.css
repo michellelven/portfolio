@@ -390,7 +390,9 @@ h2 {
 
 .myImage img {
   border: 8px solid #ff1b96;
+  padding: 8px;
   border-radius: 30px;
+  background-color: black;
 }
 
 .myStory {
@@ -400,10 +402,22 @@ h2 {
 }
 .myStory h3 {
   font-family: "Exo 2", sans-serif;
+  color: white;
   text-transform: uppercase;
   font-size: 1.5rem;
-  display: inline-block;
   border-bottom: 4px solid #ff1b96;
+  position: relative;
+  display: inline-block;
+}
+.myStory h3::after {
+  content: " ";
+  position: absolute;
+  background: #9561fd;
+  display: block;
+  width: 80%;
+  left: 10%;
+  height: 4px;
+  bottom: -9px;
 }
 .myStory p {
   padding-top: 2rem;
@@ -418,9 +432,20 @@ h2 {
   color: white;
   text-transform: uppercase;
   font-size: 1.5rem;
-  text-align: center;
   border-bottom: 4px solid #ff1b96;
+  position: relative;
+  text-align: center;
   padding-top: 4rem;
+}
+.skillsSection h3::after {
+  content: " ";
+  position: absolute;
+  background: #9561fd;
+  display: block;
+  width: 80%;
+  left: 10%;
+  height: 4px;
+  bottom: -9px;
 }
 
 .flexSkills {
@@ -519,7 +544,18 @@ h2 {
   text-transform: uppercase;
   font-size: 1.5rem;
   border-bottom: 4px solid #ff1b96;
+  position: relative;
   padding-top: 4rem;
+}
+.flexProjects h3::after {
+  content: " ";
+  position: absolute;
+  background: #9561fd;
+  display: block;
+  width: 80%;
+  left: 10%;
+  height: 4px;
+  bottom: -9px;
 }
 
 .flexProjects .projectPhoto,
@@ -545,11 +581,24 @@ h2 {
   border-bottom: 4px solid #ff1b96;
   font-size: 1.25rem;
   font-family: "Exo 2", sans-serif;
+  color: white;
+  position: relative;
+}
+.projectInfo h4::after {
+  content: " ";
+  position: absolute;
+  background: #9561fd;
+  display: block;
+  width: 80%;
+  left: 10%;
+  height: 4px;
+  bottom: -9px;
 }
 .projectInfo p {
   padding: 1rem 0 2rem 0;
   text-align: center;
   line-height: 1.5rem;
+  color: white;
 }
 
 .projectInfo p a {
@@ -558,11 +607,6 @@ h2 {
 }
 .projectInfo p a:hover, .projectInfo p a:focus {
   color: #ff1b96;
-}
-
-.projectInfo h4,
-.projectInfo p {
-  color: white;
 }
 
 .projectLinks a {
@@ -609,8 +653,19 @@ h2 {
   color: white;
   text-transform: uppercase;
   font-size: 1.5rem;
-  text-align: center;
   border-bottom: 4px solid #ff1b96;
+  position: relative;
+  text-align: center;
+}
+.contactInfo h3::after {
+  content: " ";
+  position: absolute;
+  background: #9561fd;
+  display: block;
+  width: 80%;
+  left: 10%;
+  height: 4px;
+  bottom: -9px;
 }
 .contactInfo p {
   color: white;

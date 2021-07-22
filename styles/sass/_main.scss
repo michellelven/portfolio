@@ -13,7 +13,9 @@
 
 .myImage img {
     border: 8px solid $primary;
+    padding: 8px;
     border-radius: 30px;
+    background-color: black;
 }
 
 .myStory {
@@ -21,11 +23,11 @@
     text-align: center;
     padding: 0 4rem;
     h3 {
-        font-family: $header-font;
-        text-transform: uppercase;
-        font-size: 1.5rem;
+        @include h3;
         display: inline-block;
-        border-bottom: 4px solid $primary;
+        &::after {
+            @include h-after;
+        }
     }
     p {
         padding-top: 2rem;
@@ -38,13 +40,12 @@
 .skillsSection {
     background-color: black;
     h3 {
-        font-family: $header-font;
-        color: white;
-        text-transform: uppercase;
-        font-size: 1.5rem;
+        @include h3;
         text-align: center;
-        border-bottom: 4px solid $primary;
         padding-top: 4rem;
+        &::after {
+            @include h-after;
+        }
     }
 }
 
@@ -114,12 +115,11 @@
 }
 
 .flexProjects h3 {
-    font-family: $header-font;
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    border-bottom: 4px solid $primary;
+    @include h3;
     padding-top: 4rem;
+    &::after {
+            @include h-after;
+    }
 }
 
 .flexProjects {
@@ -135,14 +135,16 @@
     flex-direction: column;
     align-items: center;
     h4 {
-        border-bottom: 4px solid $primary;
-        font-size: 1.25rem;
-        font-family: $header-font;
+        @include h4;
+        &::after {
+            @include h-after;
+        }
     }
     p {
         padding: 1rem 0 2rem 0;
         text-align: center;
         line-height: 1.5rem;
+        color: white;
     }
 }
 
@@ -153,13 +155,6 @@
     &:focus {
         color: $primary;
     }
-}
-
-.projectInfo {
-    h4,
-    p {
-        color: white;
-    }   
 }
 
 .projectLinks a {
@@ -195,12 +190,11 @@
     align-items: center;
     padding: 0 2rem;
     h3 {
-        font-family: $header-font;
-        color: white;
-        text-transform: uppercase;
-        font-size: 1.5rem;
+        @include h3;
         text-align: center;
-        border-bottom: 4px solid $primary;
+        &::after {
+            @include h-after;
+        }
     }
     p {
         color: white;
