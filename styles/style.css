@@ -389,8 +389,8 @@ h2 {
 }
 
 .myImage img {
-  -webkit-box-shadow: -0.75rem 0.75rem 0.05rem #ff1b96;
-          box-shadow: -0.75rem 0.75rem 0.05rem #ff1b96;
+  border: 8px solid #ff1b96;
+  border-radius: 30px;
 }
 
 .myStory {
@@ -552,6 +552,14 @@ h2 {
   line-height: 1.5rem;
 }
 
+.projectInfo p a {
+  color: white;
+  cursor: pointer;
+}
+.projectInfo p a:hover, .projectInfo p a:focus {
+  color: #ff1b96;
+}
+
 .projectInfo h4,
 .projectInfo p {
   color: white;
@@ -609,6 +617,7 @@ h2 {
   padding-top: 2rem;
   line-height: 1.5rem;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 .contactInfo .email {
