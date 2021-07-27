@@ -32,7 +32,13 @@
     p {
         padding-top: 2rem;
         line-height: 1.5rem;
+        text-align: left;
     }
+}
+
+.myStory p span {
+    display: block;
+    padding-top: 2rem;
 }
 
 // Skills Section Styles
